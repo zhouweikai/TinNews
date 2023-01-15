@@ -2,17 +2,14 @@ package com.laioffer.tinnews.tin;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.laioffer.tinnews.R;
-import com.laioffer.tinnews.common.TinBasicFragment;
 import com.laioffer.tinnews.mvp.MvpFragment;
-import com.laioffer.tinnews.retrofit.NewsRequestApi;
-import com.laioffer.tinnews.retrofit.RetrofitClient;
 import com.laioffer.tinnews.retrofit.response.News;
 import com.mindorks.placeholderview.SwipeDecor;
 import com.mindorks.placeholderview.SwipePlaceHolderView;
@@ -20,7 +17,6 @@ import com.mindorks.placeholderview.SwipePlaceHolderView;
 import java.util.List;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 
 /**
  * A simple {@link Fragment} subclass.

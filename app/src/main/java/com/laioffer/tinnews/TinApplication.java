@@ -1,7 +1,7 @@
 package com.laioffer.tinnews;
 
 import android.app.Application;
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 
 import com.facebook.stetho.Stetho;
 import com.laioffer.tinnews.database.AppDatabase;

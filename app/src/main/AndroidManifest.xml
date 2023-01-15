@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.laioffer.tinnews">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,8 +12,8 @@
         android:supportsRtl="true"
         android:name=".TinApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebViewActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".WebViewActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +21,18 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+            tools:replace="android:exported"
+            android:exported="false" />
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+            tools:replace="android:exported"
+            android:exported="false" />
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+            tools:replace="android:exported"
+            android:exported="false" />
     </application>
 
 </manifest>
