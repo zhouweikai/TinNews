@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 31
     defaultConfig {
-        applicationId "com.laioffer.tinnews"
+        applicationId "com.weikai.tinnews"
         minSdkVersion 17
         targetSdkVersion 31
         versionCode 1
@@ -24,7 +24,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    namespace 'com.laioffer.tinnews'
+    namespace 'com.weikai.tinnews'
 }
 
 ext {
